@@ -30,7 +30,7 @@ public class WriterService {
         writerRepository.deleteById(id);
     }
 
-    public Writer editPerson(Writer write) {
+    public Writer editWriter(Writer write) {
         Writer writer = writerRepository.findById(write.getId()).orElse(new Writer());
         Writer editwriter = new Writer();
         editwriter.setId(writer.getId());
@@ -52,4 +52,6 @@ public class WriterService {
         }
         return writerRepository.save(editwriter);
     }
+
+
 }

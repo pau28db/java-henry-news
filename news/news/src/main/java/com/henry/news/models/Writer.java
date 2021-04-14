@@ -17,10 +17,10 @@ public class Writer {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    //@NotBlank(message = "Nombre is mandatory")
+    @NotNull
     private String name;
-    //@NotBlank(message = "Apellido is mandatory")
+    @NotNull
     private String lastName;
-    //@NotNull
+    @NotNull
     private String dni;
 }
