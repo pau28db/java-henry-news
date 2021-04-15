@@ -1,2 +1,2 @@
 # java-henry-news
-Back end app for Henry bootcamp
+Backend app for Henry bootcamp created with Java & Postgres
